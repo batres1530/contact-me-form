@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  font-family: quicksand, sans-serif, Arial, Helvetica, sans-serif;
+  padding: 0 1.5em;
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+.logo span {
+  color: #b70e21;
+}
+/* .contact-fondo {
+  background: url(https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  padding: 1.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+.contact-fondo {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.contact-fondo {
+  padding: 1em;
+}
+.contact-form {
+  background: #222222;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.contact-form form button,
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid #d63031;
+}
+.contact-form form button {
+  background: #b70e21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.contact-form form button:hover,
+focus {
+  background: #d63031;
+  color: white;
+  transition: background-color 0.1s ease-out;
+  outline: 0;
+}
+
+.info {
+  background: black;
+}
+.info ul,
+p,
+h4 {
+  text-align: center;
+  margin: 0 0 1em;
+}
+.info ul {
+  list-style: none;
+}
+.info ul li {
+  padding: 0.3em;
+  text-align: center;
+}
+
+/* Tamano grande */
+@media (min-width: 700px) {
+  body {
+    padding: 0 4rem;
+  }
+}
+.contact-fondo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.contact-fondo > * {
+  padding: 2em;
+}
+.contact-fondo h4,
+ul,
+p {
+  padding: 1em;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.links a {
+  color: white;
+  margin-right: 5px;
+}
